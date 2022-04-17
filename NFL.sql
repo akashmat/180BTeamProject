@@ -48,11 +48,11 @@ CREATE TABLE COACH (
 
 CREATE TABLE MEMBER_CONTRACT (
   member_id INTEGER NOT NULL,
-  [contract] VARCHAR(20) NOT NULL,
+  [contract_name] VARCHAR(20) NOT NULL,
   signed_date date NOT NULL,
   active_status VARCHAR(20) NOT NULL,
 
-  PRIMARY KEY (member_id, [contract]),
+  PRIMARY KEY (member_id, [contract_name], signed_date),
   FOREIGN KEY (member_id) REFERENCES TEAM_MEMBER(member_id) ON DELETE CASCADE
 );
 
