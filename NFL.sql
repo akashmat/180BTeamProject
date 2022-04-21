@@ -93,7 +93,7 @@ CREATE TABLE TEAM_SCORE (
   total_rushing_yards INTEGER DEFAULT 0,
   total_offensive_yards INTEGER DEFAULT 0,
 
-  PRIMARY KEY ([year]),
+  PRIMARY KEY ([year], t_name),
   FOREIGN KEY (t_name) REFERENCES TEAM(team_name) ON DELETE CASCADE
 );
 
