@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="div-admin">
+        <h1> Read from Database</h1>
+        <form method="POST" action="/readDB">
+            <label for="read">Table: </label>
+            <input type="text" id="read" name="read"> <br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <div style="overflow: auto">
+            {% if tables %}
+                {% for table in tables %}
+                    {{ table|safe }}
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="div-admin">
+        <h1> Insert to Database</h1>
+        <form method="POST" action="/insertDB">
+            <label for="relation">Table: </label>
+            <input type="text" id="relation" name="relation"> <br>
+            <label for="values">Values: </label>
+            <input type="text" id="values" name="values"> <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+{% endblock content %}
