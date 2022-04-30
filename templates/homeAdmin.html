@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="div-admin">
+        <h1> Read from Database</h1>
+        <form method="POST" action="/readDB">
+            <label for="read">Table: </label>
+            <input type="text" id="read" name="read"> <br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <div style="overflow: auto">
+            {% if tables %}
+                {% for table in tables %}
+                    {{ table|safe }}
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+
+    <br>
+    <div class="div-admin">
+        <h1> Create a Poll </h1>
+        <form method="POST" action="/createPoll">
+            <label for="poll_name">Poll Name: </label>
+            <input type="text" id="poll_name" name="poll_name"> <br>
+            <label for="duration">Duration: </label>
+            <input type="text" id="duration" name="duration"> <br>
+            <label for="team1">Team 1: </label>
+            <input type="text" id="team1" name="team1"> <br>
+            <label for="team2">Team 2: </label>
+            <input type="text" id="team2" name="team2"> <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+{% endblock content %}

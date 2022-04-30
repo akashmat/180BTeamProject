@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+<!doctype html>
+<html>
+  <article class="media content-section">
+<head>
+<title>{{ data.question }}</title>
+</head>
+<body>
+<h1>Results for</h1>
+{{ data.question }}
+ 
+<ul>
+{% for e in votes %}
+  <li>{{ e }} {{ votes[e] }}</li>
+{% endfor %}
+</ul>
+ 
+<ul>
+  <li>Team1 Votes: {{percentage1}} </li>
+  <li>Team2 Votes: {{percentage2}} </li>
+  <li>Total Votes: {{total}} </li>
+</ul>
+  
+<ul>
+  {% for c in comments %}
+    <li>{{ c }}</li>
+  {% endfor %}
+</ul>
+
+</body>
+</article>
+</html>
+{% endblock content %}
+ 
