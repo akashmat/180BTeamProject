@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th># Games Played</th>
+        <th>Yards</th>
+        <th>Touchdowns</th>
+        <th>Total Sacks</th>
+        <th>Total Fumbles</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>{{ stats.p_year }}</td>
+          <td>{{ stats.number_games_played }}</td>
+          <td>{{ stats.yards }}</td>
+          <td>{{ stats.touchdowns }}</td>
+          <td>{{ stats.total_sacks }}</td>
+          <td>{{ stats.total_fumbles }}</td>
+        </tr>
+    </tbody>
+  </table>
+{% endblock %}
