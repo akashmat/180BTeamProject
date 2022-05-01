@@ -21,15 +21,30 @@
   <li>Team2 Votes: {{percentage2}} </li>
   <li>Total Votes: {{total}} </li>
 </ul>
-  
+</article><br>
+
+  <div class="div-admin">
 <ul>
-  {% for c in comments %}
+  <h1>Comments</h1>
+  {% for c in display_comments %}
     <li>{{ c }}</li>
   {% endfor %}
 </ul>
+</div>
 
 </body>
 </article>
+
+<!--
+<div class="div-admin">
+  <ul>
+    <h1>test</h1>
+    {% for com in display_comments2 %}
+      <li>{{ com['creator_name'] }}: {{ com['comment'] }} </li>
+    {% endfor %}
+  </ul>
+</div>
+-->
 </html>
 {% endblock content %}
  

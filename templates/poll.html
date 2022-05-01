@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <article class="media content-section">
-  <form action="/poll">
+  <form method = "POST" action="/poll">
     <head>
       <title>{{ data.question }}</title>
     </head>
@@ -16,5 +16,13 @@
       </form>
     </body>
   </article>
+
+  <div class="div-admin">
+    <h1>Comments</h1>
+      <form method = "POST" action="/poll">
+        <input type="text" id="comments" name="comments" placeholder="Enter a comment"><br>
+        <button style="height:200;width:200x" type="submit" name="button1">Submit</button>
+      </form>
+  </div>
 </html>
 {% endblock content %}
