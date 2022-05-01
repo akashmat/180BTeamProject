@@ -81,21 +81,20 @@ def login():
 
 
 scheduler = BackgroundScheduler()
-email_query= 'select email from MATCH join NOTIFIES on match_id=m_id join FAN on p_id =profile_id where  date = CAST( GETDATE()+1 as date)'
-email_data = pd.read_sql_query(email_query, con)
-email_list = email_data['email'].to_list() 
-
 def index():
-    print("attempting start")
-    with app.app_context():    
-        msg = Message('Hello from the other side!', sender = 'ankur@mailtrap.io', recipients = email_list)
-        msg.body = "Match Notification"
-        mail.send(msg)
-        print("done")
+    email_query= 'select email from MATCH join NOTIFIES on match_id=m_id join FAN on p_id =profile_id where  date = CAST( GETDATE()+1 as date)'
+    email_data = pd.read_sql_query(email_query, con)
+    email_list = email_data['email'].to_list() 
+    if len(email_list) > 0:    
+        with app.app_context():    
+            msg = Message('Hello from the other side!', sender = 'ankur@mailtrap.io', recipients = email_list)
+            msg.body = "Match Notification"
+            mail.send(msg)
+            print("done")
 
 
 if __name__ == '__main__':
     app.scheduler = scheduler
-    app.scheduler.add_job(index, trigger='cron', minute='*')
+    app.scheduler.add_job(index, trigger='cron', year="*", month="*", day="*", hour="10", minute="0", second="0")
     app.scheduler.start()
     app.run(debug=True)
