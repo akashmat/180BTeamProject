@@ -87,7 +87,7 @@ def index():
     email_list = email_data['email'].to_list() 
     if len(email_list) > 0:    
         with app.app_context():    
-            msg = Message('Hello from the other side!', sender = 'ankur@mailtrap.io', recipients = email_list)
+            msg = Message('Hello, Its match day!', sender = 'ankur@mailtrap.io', recipients = email_list)
             msg.body = "Match Notification"
             mail.send(msg)
             print("done")
