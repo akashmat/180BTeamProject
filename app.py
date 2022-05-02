@@ -3,10 +3,11 @@ from datetime import date
 import random
 from admin import admin
 from polling import polling
-from forms import RegistrationForm, LoginForm
+from forms import RegistrationForm, LoginForm, TestForm
 import db_operations as dbOp
 from sqlalchemy import create_engine
 import pandas as pd
+import pyodbc 
 
 #For Notifications: Mail
 from flask_mail import Mail, Message
@@ -19,7 +20,7 @@ app.register_blueprint(admin, url_prefix="")
 app.register_blueprint(polling, url_prefix="")
 
 
-Server = "DESKTOP-BS4D8BR\SQLEXPRESS"
+Server = "DESKTOP-TIANPEN\SQLEXPRESS"
 Database = "nfl"
 Driver = "ODBC Driver 17 for SQL Server"
 Database_Con = f'mssql://@{Server}/{Database}?driver={Driver}'
@@ -78,7 +79,7 @@ def login():
     if form.validate_on_submit():
         if form.email.data == 'admin@blog.com' and form.password.data == 'adminPassword':
             flash('You have been logged in!', 'success')
-            return redirect(url_for('homeAdmin'))
+            return render_template('search.html')
         elif form.email.data == 'user@blog.com' and form.password.data == 'userPassword':
             return redirect(url_for('home'))
         else:
@@ -117,6 +118,14 @@ def homeAdmin():
 def personal_records():
     form = TestForm()
     player_id = ""
+
+    server1 = 'DESKTOP-TIANPEN\SQLEXPRESS' 
+    database1 = 'nfl' 
+    username1 = '' 
+    password1 = '' 
+    cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server1+';DATABASE='+database1+';UID='+username1+';PWD='+ password1)
+    cursor = cnxn.cursor()
+
     if form.validate_on_submit():
         player_id =form.player_id.data
         cursor = mysql.connection.cursor()

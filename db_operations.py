@@ -4,7 +4,7 @@ from pandas.io.sql import DatabaseError
 
 
 # Windows Authentication
-Server = "DESKTOP-31O3JDL\SQLEXPRESS01"
+Server = "DESKTOP-TIANPEN\SQLEXPRESS"
 Database = "nfl"
 Driver = "ODBC Driver 17 for SQL Server"
 Database_Con = f'mssql://@{Server}/{Database}?driver={Driver}'
