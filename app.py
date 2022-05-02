@@ -96,6 +96,58 @@ def homeAdmin():
         return render_template('homeAdmin.html')
 
 
+@app.route("/personal_records", methods=['GET', 'POST'])
+def personal_records():
+    form = TestForm()
+    player_id = ""
+    if form.validate_on_submit():
+        player_id =form.player_id.data
+        cursor = mysql.connection.cursor()
+        query = "SELECT * FROM PLAYER_SCORE WHERE pscore_id = {0}".format(player_id)
+        cursor.execute(query)
+        stats = cursor.fetchone()
+        print(stats)
+        return render_template('stats.html', stats=stats)
+        
+        """pos = [
+            {
+                'author': player_id,
+                'title': 'NULL',
+                'content': 'NULL',
+                'date_posted': 'April 30, 2022'
+            }]
+        return render_template('home.html', posts=pos)"""
+        
+    return render_template('search.html', title='Login', form=form)
+
+    
+    
+
+""" 
+@app.route('/index', methods=['GET', 'POST'])
+def index():
+    search = MusicSearchForm(request.form)
+    if request.method == 'POST':
+        return search_results(search)
+    return render_template('index.html', form=search)
+
+
+@app.route('/results')
+def search_results(search):
+    results = []
+    search_string = search.data['search']
+    if search.data['search'] == '':
+        cursor = mysql.connection.cursor()
+        query = "SELECT * FROM `MATCH`"
+        cursor.execute(query)
+        results = cursor.fetchall()
+    if not results:
+        flash('No results found!')
+        return redirect('/')
+    else:
+        # display results
+        return render_template('results.html', results=results)
+"""
 
 if __name__ == '__main__':
     app.run(debug=True)
