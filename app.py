@@ -57,33 +57,46 @@ def register():
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
+    session['user'] = 'fuser1'
+    session['admin'] = 'user1'
+    return render_template("homeAdmin.html")
+    '''
     form = LoginForm()
     if form.validate_on_submit():
         if form.email.data == 'admin@blog.com' and form.password.data == 'adminPassword':
             flash('You have been logged in!', 'success')
+            session['user'] = 'fuser1'
             return redirect(url_for('homeAdmin'))
         elif form.email.data == 'user@blog.com' and form.password.data == 'userPassword':
             return redirect(url_for('home'))
         else:
             flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('login.html', title='Login', form=form)
-
+    '''
 
 
 
 poll_data = {
-   'question' : 'Which team do you think will win?',
-   'fields'   : ['team1', 'team2']
-   
+   'question' : ' ',
+   'team1' : ' ',
+   'team2' : ' '
 }
 
 #Polling 
 @app.route("/rootPoll")
 def poll():
-    #poll = dbOp.read_sql_raw("SELECT poll_id FROM POLLS")
-    #poll_id = poll['poll_id'].tolist()
-    #session['poll_id'] = poll_id
-    #print(poll_id)
+    poll = dbOp.read_sql_raw("SELECT poll_id FROM POLLS")
+    size = len(poll['poll_id'].tolist())
+    polls = poll['poll_id'].tolist()
+    rand_id = random.randint(0, size - 1)
+    poll_id = polls[rand_id]
+    session['poll_id'] = poll_id
+    print(poll_id)
+    query1 = dbOp.read_sql_raw(f"select * from POLLS where poll_id = {poll_id}")
+    poll_data['question'] = query1['poll_name'].iloc[0]
+    poll_data['team1'] = query1['team_name1'].iloc[0]
+    poll_data['team2'] = query1['team_name2'].iloc[0]
+
     return render_template('poll.html', data=poll_data)
 
 
@@ -94,7 +107,6 @@ def homeAdmin():
         return redirect(url_for('login'))
     else:
         return render_template('homeAdmin.html')
-
 
 
 if __name__ == '__main__':
