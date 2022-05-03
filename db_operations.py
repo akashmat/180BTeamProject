@@ -1,17 +1,19 @@
 from sqlalchemy import create_engine
 import pandas as pd
 from pandas.io.sql import DatabaseError 
+import pyodbc
 
 
 # Windows Authentication
 # Server = "DESKTOP-31O3JDL\SQLEXPRESS01"
-Server = "DESKTOP-BS4D8BR\SQLEXPRESS"
+Server = "DESKTOP-TIANPEN\SQLEXPRESS"
 Database = "nfl"
 Driver = "ODBC Driver 17 for SQL Server"
 Database_Con = f'mssql://@{Server}/{Database}?driver={Driver}'
-
 engine = create_engine(Database_Con)
 con = engine.connect()
+
+connection = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=DESKTOP-TIANPEN\SQLEXPRESS;DATABASE=nfl;Trusted_Connection=yes;')
 
 #select statement
 def read_sql(r_select, r_from, r_where, r_groupby, r_having, r_order_by):
@@ -119,3 +121,19 @@ def read_order_by(read_order_by):
         return ""
     else:
         return "ORDER BY" + " " + read_order_by
+
+def exec_sql(query, force_json=False):
+    cursor = connection.cursor()   
+    print(query)
+    try:
+        cursor.execute(query)
+        if not force_json:
+            data = cursor.fetchall()
+        else:
+            data = [dict((cursor.description[i][0], value) for i, value in enumerate(row)) for row in cursor.fetchall()]
+    except Exception as e:
+        cursor.close()
+        return 0
+    connection.commit()
+    cursor.close()
+    return data

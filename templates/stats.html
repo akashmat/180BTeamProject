@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+    <table id="data" class="table table-striped">
+      <thead>
+        <tr>
+          <th colspan="7" style="text-align:center"> {{stats[0].fname}}, {{stats[0].lname}}
+          </th>
+        </tr>
+        <tr>
+          <th>Year</th>
+          <th># Games Played</th>
+          <th>Yards</th>
+          <th>Touchdowns</th>
+          <th>Total Sacks</th>
+          <th>Total Fumbles</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for stat in stats %}
+          <tr>
+            <td>{{ stat.p_year }}</td>
+            <td>{{ stat.number_games_played }}</td>
+            <td>{{ stat.yards }}</td>
+            <td>{{ stat.touchdowns }}</td>
+            <td>{{ stat.total_sacks }}</td>
+            <td>{{ stat.total_fumbles }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  
+{% endblock %}

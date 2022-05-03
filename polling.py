@@ -3,8 +3,17 @@ from datetime import date
 import random
 import db_operations as dbOp
 
+import logging
+import logging.config
+
 
 polling = Blueprint("polling", __name__, static_folder="static", template_folder="templates")
+
+logging.basicConfig(filename="output.log",
+                    filemode='a',
+                    # format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
+                    datefmt='%H:%M:%S',
+                    level=logging.DEBUG)
 
 
 @polling.route("/createPoll", methods=['POST', 'GET'])
@@ -37,8 +46,10 @@ def createPoll():
         check_flag = dbOp.insert_sql("POLLS", sql_op)
         if check_flag:
             flash('Poll: Created', 'success')
+            logging.info('Poll created')
         else:
             flash('Poll: Not Created', 'danger')
+            logging.info('Poll not created')
         #opDB = "INSERT INTO " + str(team2) + " "
 
         #strpoll = session['poll_id']
@@ -110,17 +121,14 @@ def countVote():
                 insert_comments = dbOp.insert_sql("INTERACTS", f"{strpoll}, {userID} , \'{rand_id}\', \'{comments}\'")
             if insert_comments == 0:
                 flash('Comment Not Made: ', 'danger')
+                logging.info('Comment not made')
             else:
                 flash('Comment Made: ', 'success')
+                logging.info('Comment made')
 
 
         display_comments = dbOp.read_sql_raw(f"select * from INTERACTS as I join POLLS as P on I.ip_id = P.poll_id where P.poll_id = {strpoll}")
-       # display_comments2 = dis_comments[['comments', 'creator_name']]
 
-
-        #dbOp.update_sql('polls', "poll_percentage = \'{vote}\'", "poll_name = \'{data.question}\'")
-            #10%-90%
-            #display_comments2=display_comments2.to_dict(),
         return render_template('results.html', dis_comments=dis_comments, display_comments=display_comments['comments'], total=total, percentage1=percentage1, percentage2=percentage2, data=poll_data)
     else:
         return render_template('results.html')
