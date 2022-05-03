@@ -75,8 +75,8 @@ def login():
     form = LoginForm()
     print(form.validate_on_submit())
     if form.validate_on_submit():
-        # pwd = hashlib.md5(form.password.data.encode()).hexdigest()
-        data = login_api.success(form.email.data, form.password.data, form.usertype.data)
+        pwd = hashlib.md5(form.password.data.encode()).hexdigest()
+        data = login_api.success(form.email.data, pwd, form.usertype.data)
         global USER_ID
         USER_ID = data
         if data:
@@ -116,7 +116,7 @@ def fansearch():
         data = profile_api.search(form.playername.data)
         return render_template("search.html", data=data)
     else:
-        return render_template("search.html", title = "Search Profile", form=form)
+        return render_template("fansearch.html", title = "Search Fan Profiles", form=form)
 
 @app.route('/logout', methods=['GET'])
 def logout():
