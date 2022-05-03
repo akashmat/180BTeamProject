@@ -123,11 +123,13 @@ CREATE TABLE ADMINISTRATOR (
 );
 
 CREATE TABLE FAN (
-  profile_id INTEGER NOT NULL,
+  profile_id INTEGER NOT NULL IDENTITY(1,1),
   admin_ver_name VARCHAR(40),
   Fa_team VARCHAR(40),
   Fo_team VARCHAR(40),
   username VARCHAR(40) NOT NULL,
+  firstname VARCHAR(40),
+  lastname VARCHAR(40),
   email VARCHAR(40) NOT NULL,
   hashed_password VARCHAR(250) NOT NULL,
 
@@ -782,8 +784,8 @@ INSERT INTO [MATCH] VALUES(1235, 'Denver Broncos', 'Dallas Cowboys', '2022-05-02
 
 INSERT INTO ADMINISTRATOR VALUES('Manny', 'admin@blog.com', 'adminPassword');
 
-INSERT INTO FAN VALUES(56, 'Manny', 'Buffalo Bills', 'Washington Commanders', 'Tenson89', 'jessenguyen38@gmail.com', 'Ilovebilly');
-INSERT INTO FAN VALUES(57, null, null, null, 'Jason Tran', 'johncanther@gmail.com', 'passwordiscool');
+INSERT INTO FAN VALUES('Manny', 'Buffalo Bills', 'Washington Commanders', 'Tenson89', 'Jesse', 'Nguyen', 'jessenguyen38@gmail.com', 'Ilovebilly');
+INSERT INTO FAN VALUES(null, null, null, 'Jasontran', 'Jason', 'Tran',  'johncanther@gmail.com', 'passwordiscool');
 
 
 INSERT INTO NOTIFIES VALUES(1234, 56);
