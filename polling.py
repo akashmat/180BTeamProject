@@ -58,7 +58,7 @@ def countVote():
         #array_pollid = df_poll['poll_id']
         strpoll = session['poll_id']
         strpoll2 = session['user']
-       #print(strpoll[0])
+        # print(strpoll[0])
 
 
 
@@ -88,6 +88,7 @@ def countVote():
             percentage2 = int((count2 / total) * 100)
 
         q3 = dbOp.read_sql_raw(f"select * from fan where username = \'{strpoll2}\'")
+        print(q3['profile_id'])
         userID = q3['profile_id'].iloc[0]
 
         dis_comments = dbOp.read_sql_raw("select * from INTERACTS as I join POLLS as P on I.ip_id = P.poll_id")

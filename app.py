@@ -9,6 +9,11 @@ from forms import RegistrationForm, LoginForm
 #from flask_sqlalchemy import SQLAlchemy
 #db = SQLAlchemy()
 
+from sqlalchemy import create_engine
+from flask_mail import Mail, Message
+from apscheduler.schedulers.background import BackgroundScheduler
+import pandas as pd
+
 import db_operations as dbOp
 
 
@@ -17,6 +22,24 @@ app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
 #mysql = MySQL(app)
 app.register_blueprint(admin, url_prefix="")
 app.register_blueprint(polling, url_prefix="")
+
+# mail configurations
+app.config['MAIL_SERVER']='smtp.mailtrap.io'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USERNAME'] = 'accf3746129f8f'
+app.config['MAIL_PASSWORD'] = '450a1a7b606995'
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
+mail = Mail(app)
+
+Server = "DESKTOP-BS4D8BR\SQLEXPRESS"
+Database = "nfl"
+Driver = "ODBC Driver 17 for SQL Server"
+Database_Con = f'mssql://@{Server}/{Database}?driver={Driver}'
+
+engine = create_engine(Database_Con)
+con = engine.connect()
+
 
 #Testing: Remove posts.
 posts = [
@@ -57,8 +80,8 @@ def register():
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
-    session['user'] = 'fuser1'
-    session['admin'] = 'user1'
+    session['user'] = 'Tenson89'
+    session['admin'] = 'Manny'
     return render_template("homeAdmin.html")
     '''
     form = LoginForm()
@@ -109,5 +132,24 @@ def homeAdmin():
         return render_template('homeAdmin.html')
 
 
+scheduler = BackgroundScheduler()
+def index():
+    print("Initiated")
+    email_query= 'select email from MATCH join NOTIFIES on match_id=m_id join FAN on p_id =profile_id where  date = CAST( GETDATE()+1 as date)'
+    email_data = pd.read_sql_query(email_query, con)
+    email_list = email_data['email'].to_list()
+    print(email_list)
+    if len(email_list) > 0:    
+        with app.app_context():    
+            msg = Message('Hello, Its match day!', sender = 'ankur@mailtrap.io', recipients = email_list)
+            msg.body = "Match Notification"
+            mail.send(msg)
+            print("done")
+
+
 if __name__ == '__main__':
+    app.scheduler = scheduler
+    # app.scheduler.add_job(index, trigger='cron', year="*", month="*", day="*", hour="10", minute="0", second="0")
+    app.scheduler.add_job(index, trigger='cron', minute="*", second='10')
+    app.scheduler.start()
     app.run(debug=True)
