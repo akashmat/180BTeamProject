@@ -1,6 +1,7 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, BooleanField, IntegerField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, IntegerField, SelectField
 from wtforms.validators import DataRequired, Length, Email, EqualTo
+#from wtforms.ext.sqlalchemy.fields import QuerySelectField
 
 
 class RegistrationForm(FlaskForm):
@@ -22,5 +23,5 @@ class LoginForm(FlaskForm):
     submit = SubmitField('Login')
 
 class TestForm(FlaskForm):
-    player_id = IntegerField('Enter Player_ID', validators=[DataRequired()])
+    member = SelectField('Select Member ', choices =[])
     submit = SubmitField('Search')

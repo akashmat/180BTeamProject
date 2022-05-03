@@ -1,25 +1,32 @@
 {% extends "layout.html" %}
 {% block content %}
-  <table id="data" class="table table-striped">
-    <thead>
-      <tr>
-        <th>Year</th>
-        <th># Games Played</th>
-        <th>Yards</th>
-        <th>Touchdowns</th>
-        <th>Total Sacks</th>
-        <th>Total Fumbles</th>
-      </tr>
-    </thead>
-    <tbody>
+    <table id="data" class="table table-striped">
+      <thead>
         <tr>
-          <td>{{ stats.p_year }}</td>
-          <td>{{ stats.number_games_played }}</td>
-          <td>{{ stats.yards }}</td>
-          <td>{{ stats.touchdowns }}</td>
-          <td>{{ stats.total_sacks }}</td>
-          <td>{{ stats.total_fumbles }}</td>
+          <th colspan="7" style="text-align:center"> {{stats[0].fname}}, {{stats[0].lname}}
+          </th>
         </tr>
-    </tbody>
-  </table>
+        <tr>
+          <th>Year</th>
+          <th># Games Played</th>
+          <th>Yards</th>
+          <th>Touchdowns</th>
+          <th>Total Sacks</th>
+          <th>Total Fumbles</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for stat in stats %}
+          <tr>
+            <td>{{ stat.p_year }}</td>
+            <td>{{ stat.number_games_played }}</td>
+            <td>{{ stat.yards }}</td>
+            <td>{{ stat.touchdowns }}</td>
+            <td>{{ stat.total_sacks }}</td>
+            <td>{{ stat.total_fumbles }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  
 {% endblock %}

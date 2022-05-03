@@ -1,0 +1,385 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="div-admin">
+        <h1> Read from Database</h1>
+        <form method="POST" action="/readDB">
+            <label for="read">Table: </label>
+            <input type="text" id="read" name="read"> <br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <div style="overflow: auto">
+            {% if tables %}
+                {% for table in tables %}
+                    {{ table|safe }}
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+
+    <br>
+    <div class="div-admin">
+        <h1> Create a Poll </h1>
+        <form method="POST" action="/createPoll">
+            <label for="poll_name">Poll Name: </label>
+            <input type="text" id="poll_name" name="poll_name"> <br>
+            <label for="duration">Duration: </label>
+            <input type="text" id="duration" name="duration"> <br>
+            <label for="team1">Team 1: </label>
+            <input type="text" id="team1" name="team1"> <br>
+            <label for="team2">Team 2: </label>
+            <input type="text" id="team2" name="team2"> <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="div-admin">
+        <h1> Match Information </h1>
+        <style>
+            .inv {
+                display: none;
+            }
+        </style>
+        <body>
+            <select id="target">
+                <option value="">Options...</option>
+                <option value="content0_1">Add Match</option>
+                <option value="content0_2">Update Match</option>
+                <option value="content0_3">Delete Match</option>
+            <select>
+            <br> <br>
+    
+            <div id="content0_1" class="inv">   
+                <form method="POST" action="/add_match">
+                    <label for="Mte_name1">Team 1: </label>
+                    <input type="text" id="Mte_name1" name="Mte_name1"> <br>
+                    <label for="Mte_name2">Team 2: </label>
+                    <input type="text" id="Mte_name2" name="Mte_name2"> <br>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date"> <br>
+                    <input type="submit" value="Add">       
+                </form>
+            </div>
+            
+            <div id="content0_2" class="inv">  
+                <form method="POST" action="/update_match">
+                    <label for="update_name1">Team 1: </label>
+                    <input type="text" id="update_name1" name="update_name1"> <br>
+                    <label for="update_name2">Team 2: </label>
+                    <input type="text" id="update_name2" name="update_name2"> <br>
+                    <label for="update_date">Date:</label>
+                    <input type="date" id="update_date" name="update_date"> <br>
+                    <label for="update_results">Results:</label>
+                    <input type="text" id="update_results" name="update_results"> <br>
+                    <label for="update_venue">Venue:</label>
+                    <input type="text" id="update_venue" name="update_venue"> <br>
+                    <label for="name1_win_ratio">Team 1 Win Ratio:</label>
+                    <input type="text" id="name1_win_ratio" name="name1_win_ratio"> <br>
+                    <label for="name2_win_ratio">Team 2 Win Ratio:</label>
+                    <input type="text" id="name2_win_ratio" name="name2_win_ratio"> <br>
+                    <input type="submit" value="Update">       
+                </form>
+            </div>
+
+            <div id="content0_3" class="inv">  
+                <form method="POST" action="/delete_match">
+                    <label for="delete_name1">Team 1: </label>
+                    <input type="text" id="delete_name1" name="delete_name1"> <br>
+                    <label for="delete_name2">Team 2: </label>
+                    <input type="text" id="delete_name2" name="delete_name2"> <br>
+                    <label for="delete_date">Date:</label>
+                    <input type="date" id="delete_date" name="delete_date"> <br>
+                    <input type="submit" value="Delete">       
+                </form>
+            </div>
+    </div>
+        
+    <div class="div-admin">
+        <h1> Update Score Information </h1>
+        <style>
+            .inv {
+                display: none;
+            }
+        </style>
+                <body>
+                    <select id="target1">
+                        <option value="">Options...</option>
+                        <option value="content_1">Player Score</option>
+                        <option value="content_2">Coach Score</option>
+                        <option value="content_3">Team Score</option>
+                        <option value="content_4">New Score</option>
+                    <select>
+                    <br> <br>
+            
+                    <div id="content_1" class="inv">   
+                        <form method="POST" action="/update_pscore">
+                            <label for="p_name">First Name: </label>
+                            <input type="text" id="p_name" name="p_name" size="10">
+                            <label for="mp_name">M.I</label>
+                            <input type="text" id="mp_name" name="mp_name" size="4">
+                            <label for="lp_name">Last Name: </label>
+                            <input type="text" id="lp_name" name="lp_name" size="10">
+                            <label for="p_year">Year: </label>
+                            <input type="text" id="p_year" name="p_year" size="4"> <br>
+                            <label for="yards">Yards: </label>
+                            <input type="text" id="yards" name="yards" size="4"> <br>
+                            <label for="touchdowns">Touchdowns: </label>
+                            <input type="text" id="touchdowns" name="touchdowns" size="4"> <br>
+                            <label for="total_sacks">Total Number of Sacks: </label>
+                            <input type="text" id="total_sacks" name="total_sacks" size="4"> <br>
+                            <label for="total_fumbles">Total Number of Fumbles: </label>
+                            <input type="text" id="total_fumbles" name="total_fumbles" size="4"> <br>
+                            <label for="number_games_played">Number of Games Played: </label>
+                            <input type="text" id="number_games_played" name="number_games_played" size="4"> <br>
+                            <input type="submit" value="Update Player Information">
+                        </form>
+                    </div>
+                    
+                    <div id="content_2" class="inv">  
+                        <form method="POST" action="/update_cscore">
+                            <label for="c_name">Name: </label>
+                            <input type="text" id="c_name" name="c_name" size="10">
+                            <label for="mc_name">M.I</label>
+                            <input type="text" id="mc_name" name="mc_name" size="4">
+                            <label for="lc_name">Last Name: </label>
+                            <input type="text" id="lc_name" name="lc_name" size="10">
+                            <label for="c_year">Year: </label>
+                            <input type="text" id="c_year" name="c_year" size="4"> <br>
+                            <label for="years_coached">Years Coached: </label>
+                            <input type="text" id="years_coached" name="years_coached" size="4"> <br>
+                            <label for="total_games_coached">Total Games Coached: </label>
+                            <input type="text" id="total_games_coached" name="total_games_coached" size="4"> <br>
+                            <label for="sb_champ_won">Super Bowl Championships Won: </label>
+                            <input type="text" id="sb_champ_won" name="sb_champ_won" size="4"> <br>
+                            <label for="league_champ_won">League Championships Won: </label>
+                            <input type="text" id="league_champ_won" name="league_champ_won" size="4"> <br>
+                            <label for="conference_champ_won">Conference Championships Won: </label>
+                            <input type="text" id="conference_champ_won" name="conference_champ_won" size="4"> <br>
+                            <label for="division_champ_won">Division Championships Won: </label>
+                            <input type="text" id="division_champ_won" name="division_champ_won" size="4"> <br>
+                            <input type="submit" value="Update Coach Information">
+                        </form>
+                    </div>
+
+                    <div id="content_3" class="inv">  
+                        <form method="POST" action="/update_tscore">
+                            <label for="t_name">Team Name: </label>
+                            <input type="text" id="t_name" name="t_name" size="10">
+                            <label for="year">Year: </label>
+                            <input type="text" id="year" name="year" size="4"> <br>
+                            <label for="total_field_goals">Total Field Goals: </label>
+                            <input type="text" id="total_field_goals" name="total_field_goals" size="4"> <br>
+                            <label for="total_touchdowns">Total Touchdowns: </label>
+                            <input type="text" id="total_touchdowns" name="total_touchdowns" size="4"> <br>
+                            <label for="total_passing_yards">Total Passing Yards: </label>
+                            <input type="text" id="total_passing_yards" name="total_passing_yards" size="4"> <br>
+                            <label for="avg_time_possession">Average Time Possession: </label>
+                            <input type="text" id="avg_time_possession" name="avg_time_possession" size="4"> <br>
+                            <label for="total_rushing_yards">Total Rushing Yards: </label>
+                            <input type="text" id="total_rushing_yards" name="total_rushing_yards" size="4"> <br>
+                            <label for="total_offensive_yards">Total Offensive Yards: </label>
+                            <input type="text" id="total_offensive_yards" name="total_offensive_yards" size="4"> <br>
+                            <input type="submit" value="Update Coach Information">
+                        </form>
+                    </div>
+
+                    <div id="content_4" class="inv">  
+                        <form method="POST" action="/add_score">
+                            <label for="record_name">Name: </label>
+                            <input type="text" id="record_name" name="record_name" size="10">
+                            <label for="mr_name">M.I</label>
+                            <input type="text" id="mr_name" name="mr_name" size="4">
+                            <label for="lr_name">Last Name: </label>
+                            <input type="text" id="lr_name" name="lr_name" size="10">
+                            <label for="record_year">Year: </label>
+                            <input type="text" id="record_year" name="record_year" size="4"> <br>
+                            <input type="checkbox" name="new_player"> New Player Score<br>
+                            <input type="checkbox" name="new_coach"> New Coach Score<br>
+                            <input type="checkbox" name="new_team"> New Team Score<br>
+                            <button type="submit" name="add">Add Record</button>
+                            <button type="submit" name="remove">Remove Record</button>
+                        </form>
+                    </div>
+                    
+                </body>
+    </div>
+
+    <div class="div-admin">
+        <h1> Draft Information </h1>
+        <style>
+            .inv {
+                display: none;
+            }
+                </style>
+                <body>
+                    <select id="target2">
+                        <option value="">Options...</option>
+                        <option value="content1_1">Draft New Member</option>
+                        <option value="content1_2">Player to Team Rooster</option>
+                        <option value="content1_3">Coach to Team Rooster</option>
+                    <select>
+                    <br> <br>
+
+                    <div id="content1_1" class="inv">   
+                        <form method="POST" action="/insert_player">
+                            <label for="fname">First Name: </label>
+                            <input type="text" id="fname" name="fname" size="10"> <br>
+                            <label for="minit">Middle Initial: </label>
+                            <input type="text" id="minit" name="minit" size="4"> <br>
+                            <label for="lname">Last Name: </label>
+                            <input type="text" id="lname" name="lname" size="10"> <br>
+                            <label for="te_name">Team: </label>
+                            <input type="text" id="te_name" name="te_name" size="10"> <br>
+                            <input type="checkbox" name="record_player"> Player<br>
+                            <input type="checkbox" name="record_coach"> Coach<br>
+                            <button type="submit" name="draft_add" >Draft</button>
+                            <button type="submit" name="draft_remove">Remove</button>
+                        </form>
+                    </div>
+
+                    <div id="content1_2" class="inv">   
+                        <form method="POST" action="/add_player">
+                            <label for="update_fname">First Name: </label>
+                            <input type="text" id="update_fname" name="update_fname" size="10"> 
+                            <label for="update_minit">M.I.</label>
+                            <input type="text" id="update_minit" name="update_minit" size="4"> 
+                            <label for="update_lname">Last Name: </label>
+                            <input type="text" id="update_lname" name="update_lname" size="10"> <br>
+                            <h6> TO </h6>
+                            <label for="update_pteam">Team Name: </label>
+                            <input type="text" id="update_pteam" name="update_pteam" size="10"> <br>
+                            <button type="submit">Add Player</button>
+                            <button type="submit" formaction="/remove_player">Remove Player</button>
+                        </form>
+                    </div>
+                    
+                    <div id="content1_3" class="inv">   
+                        <form method="POST" action="/add_coach">
+                            <label for="new_coach">First Name: </label>
+                            <input type="text" id="new_coach" name="new_coach" size="10"> 
+                            <label for="update_cminit">M.I.</label>
+                            <input type="text" id="update_cminit" name="update_cminit" size="4"> 
+                            <label for="update_clname">Last Name: </label>
+                            <input type="text" id="update_clname" name="update_clname" size="10"> <br>
+                            <h6> TO </h6>             
+                            <label for="update_cteam">Team Name: </label>
+                            <input type="text" id="update_cteam" name="update_cteam" size="10"> <br>
+                            <button type="submit">Add Coach</button>
+                            <button type="submit" formaction="/remove_coach">Remove Coach</button>
+                        </form>
+                    </div>
+                </body>
+    </div>
+
+
+    <div class="div-admin">
+        <h1> Verification Information </h1>
+        <style>
+            .inv {
+                display: none;
+            }
+        </style>
+        <body>
+            <select id="target3">
+                <option value="">Options...</option>
+                <option value="content3_1">Add Verified User</option>
+                <option value="content3_2">Remove Verified User</option>
+            <select>
+            <br> <br>
+    
+            <div id="content3_1" class="inv">   
+                <form method="POST" action="/add_verification">
+                    <label for="add_username">Username: </label>
+                    <input type="text" id="add_username" name="add_username">
+                    <label for="add_user">Verifier: </label>
+                    <input type="text" id="add_user" name="add_user">
+                    <input type="submit" value="Verify">       
+                </form>
+            </div>
+            
+            <div id="content3_2" class="inv">  
+                <form method="POST" action="/remove_verification">
+                    <label for="remove_username">Username: </label>
+                    <input type="text" id="remove_username" name="remove_username">
+                    <input type="submit" value="Remove">       
+                </form>
+            </div>
+    </div>
+
+
+    <script>
+        document
+            .getElementById('target')
+            .addEventListener('change', function () {
+                'use strict';
+                var vis = document.querySelector('.vis'),   
+                    target = document.getElementById(this.value);
+                if (vis !== null) {
+                    vis.className = 'inv';
+                }
+                if (target !== null ) {
+                    target.className = 'vis';
+                }
+        });
+    </script>
+    
+    <script>
+        document
+            .getElementById('target1')
+            .addEventListener('change', function () {
+                'use strict';
+                var vis = document.querySelector('.vis'),   
+                    target = document.getElementById(this.value);
+                if (vis !== null) {
+                    vis.className = 'inv';
+                }
+                if (target !== null ) {
+                    target.className = 'vis';
+                }
+        });
+    </script> 
+
+    <script>
+        document
+            .getElementById('target2')
+            .addEventListener('change', function () {
+                'use strict';
+                var vis = document.querySelector('.vis'),   
+                    target = document.getElementById(this.value);
+                if (vis !== null) {
+                    vis.className = 'inv';
+                }
+                if (target !== null ) {
+                    target.className = 'vis';
+                }
+        });
+    </script> 
+
+    <script>
+        document
+            .getElementById('target3')
+            .addEventListener('change', function () {
+                'use strict';
+                var vis = document.querySelector('.vis'),   
+                    target = document.getElementById(this.value);
+                if (vis !== null) {
+                    vis.className = 'inv';
+                }
+                if (target !== null ) {
+                    target.className = 'vis';
+                }
+        });
+    </script>     
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('input:checkbox').click(function() {
+                $('input:checkbox').not(this).prop('checked', false);
+            });
+        });
+    </script>
+
+{% endblock content %}
