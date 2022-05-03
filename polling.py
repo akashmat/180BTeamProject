@@ -3,6 +3,17 @@ from datetime import date
 import random
 import db_operations as dbOp
 
+import logging
+import logging.config
+
+
+logging.basicConfig(filename="output.log",
+                    filemode='a',
+                    # format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
+                    datefmt='%H:%M:%S',
+                    level=logging.DEBUG)
+
+
 
 polling = Blueprint("polling", __name__, static_folder="static", template_folder="templates")
 
