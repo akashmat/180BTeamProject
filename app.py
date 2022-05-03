@@ -96,8 +96,8 @@ def register():
         request_data = json.loads(json.dumps(request.form))
         if signup_api.success(request_data):
             flash(f'Account created for {form.username.data}!', 'success')
-            logging.info('%s Account created successfully', form.username.data)
-            return render_template('login.html', title='Login', form=form)
+            #logging.info('%s Account created successfully', form.username.data)
+            return render_template('login.html', title='Login', form = LoginForm())
         else:
             flash('Registration unsuccessful. Please try again later!', 'danger')
     return render_template('register.html', title='Register', form=form)
@@ -108,8 +108,8 @@ def login():
     form = LoginForm()
     print(form.validate_on_submit())
     if form.validate_on_submit():
-        # pwd = hashlib.md5(form.password.data.encode()).hexdigest()
-        data = login_api.success(form.email.data, form.password.data, form.usertype.data)
+        pwd = hashlib.md5(form.password.data.encode()).hexdigest()
+        data = login_api.success(form.email.data, pwd, form.usertype.data)
         global USER_ID
         USER_ID = data
         if data:
