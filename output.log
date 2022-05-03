@@ -1,0 +1,1330 @@
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:08:10-07:00 (in 57.574487 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:08:10-07:00 (in 53.211668 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:07:30] "POST /readDB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:07:30] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:08:08] "POST /createPoll HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:08:08] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:08:10 PDT)" (scheduled at 2022-05-02 19:08:10-07:00)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:08:10 PDT)" (scheduled at 2022-05-02 19:08:10-07:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:09:10-07:00 (in 59.987146 seconds)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:09:10-07:00 (in 59.987146 seconds)
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:09:10 PDT)" executed successfully
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:09:10 PDT)" executed successfully
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:08:26] "POST /add_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:08:26] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:08:30] "POST /readDB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:08:30] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:08:37] "POST /readDB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:08:37] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:08:56] "POST /readDB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:08:56] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:10:10-07:00 (in 59.985424 seconds)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:10:10-07:00 (in 59.985424 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:10:10 PDT)" (scheduled at 2022-05-02 19:09:10-07:00)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:10:10 PDT)" (scheduled at 2022-05-02 19:09:10-07:00)
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:10:10 PDT)" executed successfully
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:10:10 PDT)" executed successfully
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:09:19] "POST /add_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:09:19] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:09:24] "POST /readDB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:09:25] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:11:10-07:00 (in 59.987751 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:11:10 PDT)" (scheduled at 2022-05-02 19:10:10-07:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:11:10-07:00 (in 59.987751 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:11:10 PDT)" (scheduled at 2022-05-02 19:10:10-07:00)
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:11:10 PDT)" executed successfully
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:11:10 PDT)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:12:10-07:00 (in 59.990688 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:12:10 PDT)" (scheduled at 2022-05-02 19:11:10-07:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:12:10-07:00 (in 59.990688 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:12:10 PDT)" (scheduled at 2022-05-02 19:11:10-07:00)
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:12:10 PDT)" executed successfully
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:12:10 PDT)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:13:10-07:00 (in 59.989330 seconds)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:13:10-07:00 (in 59.989330 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:13:10 PDT)" (scheduled at 2022-05-02 19:12:10-07:00)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:13:10 PDT)" (scheduled at 2022-05-02 19:12:10-07:00)
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:13:10 PDT)" executed successfully
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:13:10 PDT)" executed successfully
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:31:10-07:00 (in 6.974165 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:31:10-07:00 (in 2.588930 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:31:10 PDT)" (scheduled at 2022-05-02 19:31:10-07:00)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:31:10 PDT)" (scheduled at 2022-05-02 19:31:10-07:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:32:10-07:00 (in 59.994845 seconds)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:32:10-07:00 (in 59.994845 seconds)
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:32:10 PDT)" executed successfully
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:32:10 PDT)" executed successfully
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:31:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:31:52] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:31:54] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:31:55] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:31:56] "GET /rootPoll HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:31:56] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:31:58] "POST /poll HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:31:58] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:32:06] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:32:07] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:33:10-07:00 (in 59.985074 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:33:10 PDT)" (scheduled at 2022-05-02 19:32:10-07:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:33:10-07:00 (in 59.985074 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:33:10 PDT)" (scheduled at 2022-05-02 19:32:10-07:00)
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:33:10 PDT)" executed successfully
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:33:10 PDT)" executed successfully
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:32:30] "POST /insert_player HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:32:31] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:34:10-07:00 (in 59.994065 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:34:10 PDT)" (scheduled at 2022-05-02 19:33:10-07:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:34:10-07:00 (in 59.994065 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:34:10 PDT)" (scheduled at 2022-05-02 19:33:10-07:00)
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:34:10 PDT)" executed successfully
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:34:10 PDT)" executed successfully
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:33:32] "POST /readDB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:33:32] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:33:38] "POST /add_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:33:38] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:33:42] "POST /add_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:33:42] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:33:45] "POST /add_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:33:45] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:35:10-07:00 (in 59.982255 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:35:10 PDT)" (scheduled at 2022-05-02 19:34:10-07:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:35:10-07:00 (in 59.982255 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:35:10 PDT)" (scheduled at 2022-05-02 19:34:10-07:00)
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:35:10 PDT)" executed successfully
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:35:10 PDT)" executed successfully
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\admin.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:35:10-07:00 (in 37.100085 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\admin.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:35:10-07:00 (in 3.155835 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:35:10 PDT)" (scheduled at 2022-05-02 19:35:10-07:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:36:10-07:00 (in 59.991727 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-02 19:36:10-07:00 (in 59.959740 seconds)
+INFO:apscheduler.executors.default:Running job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:36:10 PDT)" (scheduled at 2022-05-02 19:35:10-07:00)
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:36:10 PDT)" executed successfully
+INFO:apscheduler.executors.default:Job "index (trigger: cron[minute='*', second='10'], next run at: 2022-05-02 19:36:10 PDT)" executed successfully
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 51795.192243 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 51790.548899 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:36:49] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:36:49] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:36:53] "POST /add_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:36:53] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\admin.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 51722.450383 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:38:00] "POST /add_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:38:00] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\admin.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 51705.581888 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:root:,  match information between [] and [] check
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:38:21] "POST /update_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:38:21] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:team_name10, team_name2 match information between [team_name10] and [team_name2] check
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:38:45] "POST /update_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:38:45] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\admin.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 51622.450704 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\admin.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 51604.909657 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:39:57] "POST /add_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:39:58] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\admin.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 51580.916275 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 51565.439479 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 51561.183669 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:40:43] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:40:43] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:,  match between [] and [] was not added
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:40:47] "POST /add_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:40:47] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\admin.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 51135.126078 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 51130.569331 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:47:49] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:47:49] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:Poll not created
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:47:52] "POST /createPoll HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:47:53] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:,  Player information: Incorrect [] or []!
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:48:06] "POST /update_pscore HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:48:06] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:,  Draft information [ or [ missing!
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:48:24] "POST /insert_player HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:48:24] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\admin.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 51025.519942 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:root:,  match information between [] and [] check
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:49:35] "POST /delete_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:49:35] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:49:38] "POST /readDB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:49:38] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:Buffalo Bills, Dallas Cowboys match information between [Buffalo Bills] and [Dallas Cowboys] check
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:49:58] "POST /delete_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:49:58] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:50:03] "POST /readDB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:50:04] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:Denver Broncos, Dallas Cowboys match information between [Denver Broncos] and [Dallas Cowboys] deleted
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:50:25] "POST /delete_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 19:50:26] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49888.667886 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49883.250216 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:42] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:45] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:45] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:48] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:48] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:48] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:49] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:49] "GET /rootPoll HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:49] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:51] "POST /poll HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:51] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:53] "GET /rootPoll HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:53] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:Comment made
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:54] "POST /poll HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:08:54] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:09:01] "[35m[1mGET /personal_records HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:09:02] "GET /personal_records?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:09:02] "GET /personal_records?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:09:02] "GET /personal_records?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:09:02] "[36mGET /personal_records?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:09:28] "[35m[1mGET /personal_records HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:09:28] "[36mGET /personal_records?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:09:29] "[36mGET /personal_records?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:09:29] "[36mGET /personal_records?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:09:29] "[36mGET /personal_records?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49650.852722 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49638.626891 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49633.259771 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:12:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:12:47] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:12:59] "GET /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:12:59] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49532.452861 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49526.874645 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:14:33] "[35m[1mGET /personal_records HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:14:33] "[36mGET /personal_records?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:14:33] "[36mGET /personal_records?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:14:33] "[36mGET /personal_records?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:14:33] "[36mGET /personal_records?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49398.834487 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49392.973455 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:16:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:16:47] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:16:52] "[35m[1mGET /personal_records HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:16:52] "[36mGET /personal_records?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:16:52] "[36mGET /personal_records?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:16:53] "[36mGET /personal_records?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49165.774988 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49160.289403 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:20:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:20:40] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:20:46] "GET /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:20:46] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:20:54] "POST /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:20:54] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:20:59] "GET /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:20:59] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:21:07] "POST /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:21:07] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:21:11] "GET /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:21:11] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:21:13] "POST /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:21:13] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:21:30] "[35m[1mGET /coach_records HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:21:30] "GET /coach_records?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:21:30] "GET /coach_records?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:21:30] "GET /coach_records?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:21:30] "[36mGET /coach_records?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49044.421451 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 49039.032095 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:22:41] "[35m[1mGET /coach_records HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:22:41] "[36mGET /coach_records?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:22:41] "[36mGET /coach_records?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:22:41] "[36mGET /coach_records?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:22:41] "[36mGET /coach_records?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 48999.411991 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 48993.879059 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:23:26] "GET /coach_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:23:26] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:23:28] "POST /coach_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:23:28] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:23:30] "GET /coach_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:23:30] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:23:32] "POST /coach_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:23:32] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:26:47] "POST /coach_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:26:47] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 48742.628951 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 48737.228811 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:27:48] "GET /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:27:48] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:27:51] "POST /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:27:51] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:28:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:28:42] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:28:54] "POST /readDB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:28:54] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:Arizona Cardinals, 2019 score for Arizona Cardinals, 2019 added
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:08] "POST /add_score HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:08] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:14] "GET /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:14] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:16] "POST /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:16] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:21] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:21] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:Arizona Cardinals, 2019 Team information [Arizona Cardinals], [2019] updated
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:44] "POST /update_tscore HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:44] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:50] "GET /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:50] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:52] "POST /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:29:52] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:30:02] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:30:02] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:30:14] "POST /readDB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:30:14] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:Riley, 2016 score for Riley, 2016 added
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:30:50] "POST /add_score HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:30:50] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:00] "GET /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:00] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:04] "GET /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:04] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:07] "POST /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:07] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:10] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:10] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:Riley, 2016 Player information: [Riley] or [2016]: Updated!
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:22] "POST /update_pscore HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:23] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:26] "GET /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:26] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:29] "POST /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:29] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:32] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:32] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:Riley, 2017 score for Riley, 2017 added
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:47] "POST /add_score HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:47] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:50] "GET /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:50] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:52] "POST /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:31:52] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 47878.591511 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 47873.420162 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 47818.706285 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 47813.608224 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:43:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:43:06] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:43:06] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:43:13] "GET /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:43:13] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:43:14] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:43:16] "POST /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:43:16] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 47753.979459 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 47743.308544 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 47730.802412 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 47725.727689 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:44:44] "GET /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:44:44] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:44:46] "[32mPOST /search HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:44:46] "GET /coach_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:44:46] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:44:49] "POST /coach_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:44:50] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:44:53] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:44:53] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:44:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:44:54] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:03] "GET /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:03] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:05] "[32mPOST /search HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:05] "GET /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:05] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:07] "POST /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:07] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:11] "GET /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:11] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:14] "[32mPOST /search HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:14] "GET /coach_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:14] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:16] "POST /coach_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:16] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:20] "GET /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:21] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:23] "[32mPOST /search HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:23] "GET /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:23] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:25] "POST /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:45:25] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 47630.699145 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 47625.412106 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:14] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:20] "GET /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:20] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:22] "[32mPOST /search HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:22] "GET /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:22] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:23] "POST /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:23] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:25] "GET /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:25] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:27] "[32mPOST /search HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:27] "GET /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:46:27] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:02] "GET /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:02] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:04] "GET /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:04] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:06] "[32mPOST /search HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:06] "GET /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:06] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:08] "POST /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:08] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:09] "GET /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:09] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:10] "[32mPOST /search HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:10] "GET /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:10] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:13] "POST /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:13] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:18] "GET /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:18] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:20] "[32mPOST /search HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:20] "GET /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:20] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:23] "POST /team_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:23] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:30] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:31] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:37] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:37] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:39] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 20:47:39] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 45632.948210 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 45627.747560 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:19:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:19:32] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:19:32] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:19:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:19:39] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:19:44] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:19:44] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:,  match between [] and [] was not added
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:20:02] "POST /add_match HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:20:02] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:root:Poll not created
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:22:58] "POST /createPoll HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:22:58] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:23:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:23:08] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 45373.241737 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:23:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:23:51] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:23:56] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:23:56] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:23:58] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:23:58] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:24:01] "POST /readDB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:24:01] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:24:29] "GET /rootPoll HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:24:29] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:24:31] "POST /poll HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:24:31] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 44589.942129 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 44583.702407 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:36:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:36:56] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:36:58] "GET /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:36:58] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:37:06] "[32mPOST /search HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:37:07] "GET /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:37:07] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:37:13] "POST /personal_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:37:13] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:37:17] "GET /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:37:17] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:37:19] "[32mPOST /search HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:37:19] "GET /coach_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:37:19] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:37:23] "POST /coach_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 21:37:23] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 40540.136211 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 40533.573696 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:44:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:44:26] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:44:26] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:44:27] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:44:27] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 40493.500594 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 40487.232526 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:45:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:45:13] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:45:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:45:18] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:45:51] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:45:51] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:46:22] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:46:22] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 40279.073503 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 40249.733448 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 40243.580007 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:49:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:49:16] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:49:18] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:49:18] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:49:43] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:49:43] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 40166.422626 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 40160.148977 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:50:40] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:50:40] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:50:54] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 22:50:54] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 39250.206744 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 39243.890381 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:05:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:05:56] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:05:59] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:05:59] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:06:09] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:06:09] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 39170.771693 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 39164.761613 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:07:15] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:07:15] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:07:15] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:07:24] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:07:24] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:11:05] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:11:05] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:11:13] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:11:13] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:11:17] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:11:17] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38739.750620 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38733.052967 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:14:33] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:14:33] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:14:38] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:14:38] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:15:08] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:15:08] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:15:23] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:15:23] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\signup_api.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38480.175466 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\db_operations.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38462.232779 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38425.208069 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38419.055387 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:19:52] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:19:52] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:20:15] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:20:15] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:20:19] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:20:19] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:20:26] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:20:26] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:20:36] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:20:36] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38258.478943 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38252.321164 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:22:27] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:22:28] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:22:34] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:22:34] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:22:43] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:22:43] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38198.362131 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38167.521729 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38161.446941 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:24:03] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:24:03] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38105.063271 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 38099.061642 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:25:01] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:25:01] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:25:04] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:25:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:25:05] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:25:10] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:25:10] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:25:27] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:25:27] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37904.039146 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37897.954384 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:28:30] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:28:30] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\signup_api.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37861.940061 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37845.207115 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37839.158780 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:29:31] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:29:31] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:29:33] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:29:33] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:29:49] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:29:49] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\db_operations.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37729.501723 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:31:29] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:31:29] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\signup_api.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37501.856872 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37488.776279 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37482.167070 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:35:18] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:35:18] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:35:18] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:35:18] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:35:18] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:35:18] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37429.509485 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37423.106720 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:36:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:36:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:36:17] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:36:18] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:36:18] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:36:26] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:36:26] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\signup_api.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37336.945357 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37330.497516 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:37:49] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:37:49] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:37:49] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\signup_api.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37298.299491 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37291.831084 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:38:28] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:38:28] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:38:28] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\signup_api.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37191.073239 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\signup_api.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37144.215068 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37138.112936 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:41:09] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:41:09] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\signup_api.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37076.388199 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 37070.211915 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:42:14] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:42:14] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:42:14] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:42:14] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:42:14] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 36977.205328 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 36968.388555 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:44:00] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:44:00] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:44:40] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:44:40] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:48:50] "GET /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:48:50] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:48:53] "[32mPOST /search HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:48:53] "GET /coach_records HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:48:53] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:48:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:48:55] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:49:23] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:49:23] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:49:43] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:49:43] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:50:13] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:50:13] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:50:13] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:50:13] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\lingi\\Desktop\\CMPE138_Project\\Test\\180BTeamProject\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 36563.299655 seconds)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "index" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2022-05-03 10:00:00-07:00 (in 36557.168936 seconds)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-792-847
+INFO:root:Tian Account created successfully
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:51:09] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:51:09] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:52:05] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:52:05] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:52:14] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:52:14] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:53:15] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:53:15] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:53:28] "POST /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2022 23:53:28] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
