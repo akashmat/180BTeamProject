@@ -1,13 +1,20 @@
-#from tabnanny import check
+import logging
+import logging.config
+
 from tkinter import ttk
 from flask import render_template, flash, request, Blueprint, session, url_for, redirect
-#from forms import RegistrationForm, LoginForm
 from datetime import date
 import db_operations as dbOp
 import random
 import pandas as pd
 
 admin = Blueprint("admin", __name__, static_folder="static", template_folder="templates")
+
+logging.basicConfig(filename="output.log",
+                    filemode='a',
+                    # format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
+                    datefmt='%H:%M:%S',
+                    level=logging.DEBUG)
 
 ################################################ --- Database operations by Administer ---- ############################################################################
 
@@ -95,12 +102,16 @@ def add_score():
 
         if check_flag and one is not None:
             flash(f'Score for {name}, {year} added', 'success')
+            logging.info(f'%s, %s score for {name}, {year} added', name, year)
         elif check_flag and two is not None:
             flash(f'Score for {name}, {year} removed', 'success')
+            logging.info(f'%s, %s score for {name}, {year} removed', name, year)
         elif not check_flag and one is not None:
             flash(f'Score for {name}, {year} not added', 'danger')
+            logging.info(f'%s, %s score for {name}, {year} not added', name, year)
         elif not check_flag and two is not None:
             flash(f'Score for {name}, {year} not removed', 'danger')
+            logging.info(f'%s, %s score for {name}, {year} not removed', name, year)
         return render_template("homeAdmin.html")
     else:
         return render_template("homeAdmin.html")
@@ -163,10 +174,13 @@ def update_pscore():
 
         if member_id == 0:
             flash('Player Information: Incorrect [name] or [year]!', 'danger')
+            logging.info(f'%s, %s Player information: Incorrect [{name}] or [{year}]!', name, year)
         elif not error_list:
             flash(f'Player Information for [{name}], [{year}]: Updated!', 'success')
+            logging.info(f'%s, %s Player information: [{name}] or [{year}]: Updated!', name, year)
         else:
             flash(f'Player Information for [{name}], [{year}]: {error_list} have not been updated!', 'danger')
+            logging.info(f'%s, %s Player information: [{name}] or [{year}]: have not been updated!', name, year)
         return render_template("homeAdmin.html")
     else:
         return render_template("homeAdmin.html")
@@ -235,10 +249,13 @@ def update_cscore():
 
         if member_id == 0:
             flash('Coach Information for: Incorrect [name] or [year]!', 'danger')
+            logging.info(f'%s, %s Incorrect coach information [{name}] or [{year}] entered', name, year)
         elif not error_list:
             flash(f'Coach Information for [{name}], [{year}]: Updated!', 'success')
+            logging.info(f'%s, %s Coach information [{name}], [{year}] updated', name, year)
         else:
             flash(f'Coach Information for [{name}], [{year}]: {error_list} have not been updated!', 'danger')
+            logging.info(f'%s, %s Coach information [{name}], [{year}] not updated', name, year)
         return render_template("homeAdmin.html")
     else:
         return render_template("homeAdmin.html")
@@ -297,10 +314,13 @@ def update_tscore():
 
         if member_id == 0:
             flash('Team Information: Incorrect [name] or [year]!', 'danger')
+            logging.info(f'%s, %s Incorrect team information [{name}] or [{year}]', name, year)
         elif not error_list:
             flash(f'Team Information for [{name}], [{year}]: Updated!', 'success')
+            logging.info(f'%s, %s Team information [{name}], [{year}] updated', name, year)
         else:
             flash(f'Team Information for [{name}], [{year}]: {error_list} have not been updated!', 'danger')
+            logging.info(f'%s, %s Team information [{name}], [{year}] not updated', name, year)
         return render_template("homeAdmin.html")
     else:
         return render_template("homeAdmin.html")
@@ -374,16 +394,21 @@ def insert_player():
 
         if name_flag == 0: #or team_flag == 0:
             flash('Drafted Information: Draft [first name] or [last name] missing!', 'danger')
+            logging.info(f'%s, %s Draft information [{fname} or [{lname} missing!', fname, lname)
         elif draft_add is not None: #or not team_flag:
             if not inserted_flag and not check_flag:
                 flash(f'Drafted Information for [{fname}], [{lname}]: Draft invalid', 'danger')
+                logging.info(f'%s, %s Draft information [{fname}] or [{lname}] invalid', fname, lname)
             else:
                 flash(f'Drafted Information for [{fname}], [{lname}]: Draft added!', 'success')
+                logging.info(f'%s, %s Draft information [{fname}] or [{lname}] added!', fname, lname)
         elif draft_remove is not None:
             if not check_delete:
                 flash(f'Drafted Information for [{fname}], [{lname}]: Remove Invalid!', 'danger')
+                logging.info(f'%s, %s Draft information [{fname}] or [{lname}] remove invalid!', fname, lname)
             else: 
                 flash(f'Drafted Information for [{fname}], [{lname}]: Removed!', 'success')
+                logging.info(f'%s, %s Draft information [{fname}] or [{lname}] removed!', fname, lname)
 
         return render_template("homeAdmin.html")
     else:
@@ -446,8 +471,10 @@ def add_player():
 
         if check_flag: #or team_flag == 0:
             flash(f'Player [{new_player}] was added to team [{update_pteam}]!', 'success')
+            logging.info(f'%s, %s Player [{new_player}] was added to team [{update_pteam}]', new_player, update_pteam)
         else:
             flash(f'Player [{new_player}] cannot be added to team [{update_pteam}]!', 'danger')
+            logging.info(f'%s, %s Player [{new_player}] cannot be added to team [{update_pteam}]', new_player, update_pteam)
         return render_template("homeAdmin.html")
     else:
         return render_template("homeAdmin.html")    
@@ -501,8 +528,10 @@ def remove_player():
 
         if check_flag: #or team_flag == 0:
             flash(f'Player [{new_player}] was removed from team [{update_pteam}]!', 'success')
+            logging.info(f'%s, %s Player [{new_player}] removed from team [{update_pteam}]', new_player, update_pteam)
         else:
             flash(f'Player [{new_player}]  was not removed from team [{update_pteam}]!', 'danger')
+            logging.info(f'%s, %s Player [{new_player}] was not removed from team [{update_pteam}]', new_player, update_pteam)
         return render_template("homeAdmin.html")
     else:
         return render_template("homeAdmin.html")   
@@ -559,8 +588,10 @@ def add_coach():
 
         if check_flag: #or team_flag == 0:
             flash(f'Coach [{new_coach}] was added to team [{update_cteam}]!', 'success')
+            logging.info(f'%s, %s Coach [{new_coach}] was added to team [{update_cteam}]', new_coach, update_cteam)
         else:
             flash(f'Coach [{new_coach}] cannot be added to team [{update_cteam}]!', 'danger')
+            logging.info(f'%s, %s Coach [{new_coach}] cannot be added to team [{update_cteam}]', new_coach, update_cteam)
         return render_template("homeAdmin.html")
     else:
         return render_template("homeAdmin.html")    
@@ -584,13 +615,13 @@ def remove_coach():
             df_exists = pd.Series( [ str(i) + str(j) + str(k) for i,j, k in df_items[['fname', 'minit', 'lname']].values ] )
             new_entry = [str(new_coach) + str(update_cminit) + str(update_clname)]
 
-            select_op = f"SELECT te_name from TEAM_MEMBER WHERE fname=\'{new_coach}\' and minit=\'{update_cminit}\' and lname=\'{update_clname}\'"
+            #select_op = f"SELECT te_name from TEAM_MEMBER WHERE fname=\'{new_coach}\' and minit=\'{update_cminit}\' and lname=\'{update_clname}\'"
             update_op = f"fname=\'{new_coach}\' and minit=\'{update_cminit}\' and lname=\'{update_clname}\'"
         else:
             df_exists = pd.Series( [ str(i) + str(j) for i,j in df_items[['fname', 'lname']].values ] )
             new_entry = [str(new_coach) + str(update_clname)] 
 
-            select_op = f"SELECT te_name from TEAM_MEMBER WHERE fname=\'{new_coach}\' and minit is null and lname=\'{update_clname}\'"
+            #select_op = f"SELECT te_name from TEAM_MEMBER WHERE fname=\'{new_coach}\' and minit is null and lname=\'{update_clname}\'"
             update_op = f"fname=\'{new_coach}\' and minit is null and lname=\'{update_clname}\'"        
 
         entry = df_items[ df_exists.isin(new_entry) ]
@@ -614,8 +645,10 @@ def remove_coach():
 
         if check_flag: #or team_flag == 0:
             flash(f'Coach [{new_coach}] was removed from team [{update_cteam}]!', 'success')
+            logging.info(f'%s, %s Coach [{new_coach}] was removed from team [{update_cteam}]', new_coach, update_cteam)
         else:
             flash(f'Coach [{new_coach}]  was not removed from team [{update_cteam}]!', 'danger')
+            logging.info(f'%s, %s Coach [{new_coach}] was not removed from team [{update_cteam}]', new_coach, update_cteam)
         return render_template("homeAdmin.html")
     else:
         return render_template("homeAdmin.html")    
@@ -654,15 +687,23 @@ def add_match():
 
         if t1 and t2 and date and not identical_check:
             check_flag = dbOp.insert_sql("MATCH", f"{rand_id}, \'{t1}\', \'{t2}\', \'{date}\', null, null, null, null")
+            number_of_fans = dbOp.read_sql_raw("select profile_id from Fan")
+            if not number_of_fans.empty:
+                fan_array = number_of_fans['profile_id'].tolist()
+                for user_id in fan_array:
+                    check_insert = dbOp.insert_sql("NOTIFIES", f"{rand_id}, {user_id}")
         else:
             check_flag = 0
 
         if check_flag: #or team_flag == 0:
             flash(f'Match between [{t1}] and [{t2}] added for [{date}]!', 'success')
+            logging.info(f'%s, %s match between [{t1}] and [{t2}] was added', t1, t2)
         elif identical_check:
             flash(f'Match between [{t1}] and [{t2}] already exists for [{date}]!', 'danger')
+            logging.info(f'%s, %s match between [{t1}] and [{t2}] already exists', t1, t2)
         else:
             flash(f'Match between [{t1}] and [{t2}] not added for [{date}]!', 'danger')
+            logging.info(f'%s, %s match between [{t1}] and [{t2}] was not added', t1, t2)
 
         return render_template("homeAdmin.html") 
     else:    
@@ -717,10 +758,13 @@ def update_match():
 
         if not identical_check:
             flash(f'Match information between [{update_name1}] and [{update_name2}] on [{update_date}] does not exist!', 'danger')
+            logging.info(f'%s, %s match information between [{update_name1}] and [{update_name2}] check', update_name1, update_name2)
         elif not update_list:
             flash(f'Match information between [{update_name1}] and [{update_name2}] on [{update_date}]: Not updated!', 'success')
+            logging.info(f'%s, %s match information between [{update_name1}] and [{update_name2}] not updated', update_name1,update_name2)
         else:
             flash(f'Match Information between [{update_name1}] and [{update_name2}] on [{update_date}]: {update_list} have been updated!', 'success')
+            logging.info(f'%s, %s match information between [{update_name1}] and [{update_name2}] updated', update_name1,update_name2)
         return render_template("homeAdmin.html")
     else:
         return render_template("homeAdmin.html")
@@ -758,10 +802,13 @@ def delete_match():
 
         if not identical_check:
             flash(f'Match information between [{delete_name1}] and [{delete_name2}] on [{delete_date}] does not exist!', 'danger')
+            logging.info(f'%s, %s match information between [{delete_name1}] and [{delete_name2}] check', delete_name1, delete_name2)
         elif not check_flag:
             flash(f'Match information between [{delete_name1}] and [{delete_name2}] on [{delete_date}]: Not deleted!', 'danger')
+            logging.info(f'%s, %s match information between [{delete_name1}] and [{delete_name2}] not deleted', delete_name1, delete_name2)
         else:
             flash(f'Match information between [{delete_name1}] and [{delete_name2}]on [{delete_date}]: Deleted!', 'success')
+            logging.info(f'%s, %s match information between [{delete_name1}] and [{delete_name2}] deleted', delete_name1, delete_name2)
         return render_template("homeAdmin.html")
     else:
         return render_template("homeAdmin.html")
@@ -797,12 +844,16 @@ def add_verification():
 
         if not exist_flag:
             flash(f'Verification: User [{add_username}] does not exist!', 'danger')
+            logging.info(f'%s User [{add_username}] does not exist', add_username)
         elif already_flag:
             flash(f'Verification: User [{add_username}] already verified!', 'success')
+            logging.info(f'%s User [{add_username}] already verified', add_username)
         elif check_flag:
             flash(f'Verfication: User [{add_username}] verified!', 'success')
+            logging.info(f'%s User [{add_username}] verified', add_username)
         else:
             flash(f'Verification: User [{add_username}] could not be verified!', 'danger')
+            logging.info(f'%s User [{add_username}] cannot be verified', add_username)
                 
         return render_template("homeAdmin.html")
     else:
@@ -829,12 +880,16 @@ def remove_verification():
 
         if not exist_flag:
             flash(f'Verification: User [{remove_username}] does not exist!', 'danger')
+            logging.info(f'%s User [{remove_username}] does not exist', remove_username)
         elif already_flag:
             flash(f'Verification: User [{remove_username}] already un-verified!', 'success')
+            logging.info(f'%s User [{remove_username}] already un-verified', remove_username)
         elif check_flag:
             flash(f'Verfication: User [{remove_username}] verification removed!', 'success')
+            logging.info(f'%s User [{remove_username}] verification removed', remove_username)
         else:
             flash(f'Verification: User [{remove_username}] could not be un-verified!', 'danger')
+            logging.info(f'%s User [{remove_username}] cannot be unverified', remove_username)
 
         return render_template("homeAdmin.html")
     else:

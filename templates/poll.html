@@ -9,9 +9,8 @@
     </head>
     <body>
     <h1>{{ data.question }}</h1>
-      {% for e in data.fields %}
-        <input type="radio" name="field" value="{{ e }}"> {{ e }}<br>
-      {% endfor %}
+        <input type="radio" name="field" value="{{ data.team1 }}"> {{ data.team1 }}<br>
+        <input type="radio" name="field" value="{{ data.team2 }}"> {{ data.team2 }}<br>
         <input type="submit" value="Vote"/>
       </form>
     </body>

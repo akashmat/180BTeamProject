@@ -1,21 +1,23 @@
 {% extends "layout.html" %}
 {% block content %}
     <div class="content-section">
-        <form method="POST" action="{{ url_for('personal_records') }}">
+        <form method="POST" action="{{ url_for(view) }}">
             {{ form.hidden_tag() }}
-            <legend class="border-bottom mb-4">Player Statistics</legend>
+            <legend class="border-bottom mb-4">Statistics</legend>
             <div class="form-group">
-                {{ form.player_id.label(class="form-control-label") }}
-                {% if form.player_id.errors %}
-                    {{ form.player_id(class="form-control form-control-lg is-invalid") }}
+                {{ form.member.label(class="form-control-label") }}
+                
+                {% if form.member.errors %}
+                    {{ form.member(class="form-control form-control-lg is-invalid") }}
                     <div class="invalid-feedback">
-                        {% for error in form.player_id.errors %}
+                        {% for error in form.member.errors %}
                             <span>{{ error }}</span>
                         {% endfor %}
                     </div>
                 {% else %}
-                    {{ form.player_id(class="form-control form-control-lg") }}
+                    {{ form.member(class="form-control form-control-lg") }}
                 {% endif %}
+                
             </div>
             <div class="form-group">
                 {{ form.submit(class="btn btn-outline-info") }}
@@ -23,3 +25,4 @@
         </form>
     </div>
 {% endblock content %}
+                 

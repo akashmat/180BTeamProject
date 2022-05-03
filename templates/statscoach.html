@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+    <table id="data" class="table table-striped">
+      <thead>
+        <tr>
+          <th colspan="7" style="text-align:center"> {{stats[0].fname}}, {{stats[0].lname}}
+          </th>
+        </tr>
+        <tr>
+          <th>Year</th>
+          <th>Years Coached</th>
+          <th># Games Coached</th>
+          <th>Super Bowl Championship</th>
+          <th>Leagues Won</th>
+          <th>Conference Won</th>
+          <th>Divisions Won</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for stat in stats %}
+          <tr>
+            <td>{{ stat.c_year }}</td>
+            <td>{{ stat.years_coached }}</td>
+            <td>{{ stat.total_games_coached }}</td>
+            <td>{{ stat.sb_champ_won }}</td>
+            <td>{{ stat.league_champ_won }}</td>
+            <td>{{ stat.conference_champ_won }}</td>
+            <td>{{ stat.division_champ_won }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  
+{% endblock %}

@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, BooleanField, IntegerField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, IntegerField, SelectField
 from wtforms.validators import DataRequired, Length, Email, EqualTo
 
 
@@ -22,5 +22,10 @@ class LoginForm(FlaskForm):
     submit = SubmitField('Login')
 
 class TestForm(FlaskForm):
-    player_id = IntegerField('Enter Player_ID', validators=[DataRequired()])
+    member = SelectField('Select Member ', choices =[])
+    submit = SubmitField('Search')    
+
+class SearchOption(FlaskForm):
+    choices = [('/personal_records', 'Players'), ('/coach_records', 'Coaches'), ('/team_records', 'Teams')]
+    member = SelectField('Select Member Type ', choices =choices)
     submit = SubmitField('Search')

@@ -4,6 +4,7 @@ from pandas.io.sql import DatabaseError
 
 
 # Windows Authentication
+# Server = "DESKTOP-31O3JDL\SQLEXPRESS01"
 Server = "DESKTOP-TIANPEN\SQLEXPRESS"
 Database = "nfl"
 Driver = "ODBC Driver 17 for SQL Server"
@@ -118,8 +119,3 @@ def read_order_by(read_order_by):
         return ""
     else:
         return "ORDER BY" + " " + read_order_by
-
-query = "select * from FAN"
-query1 = "select email from MATCH join NOTIFIES on match_id=m_id join FAN on p_id =profile_id"
-res = read_sql_raw(query1)
-print(res['email'].to_list())
