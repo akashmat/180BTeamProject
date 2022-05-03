@@ -37,8 +37,10 @@ def createPoll():
         check_flag = dbOp.insert_sql("POLLS", sql_op)
         if check_flag:
             flash('Poll: Created', 'success')
+            logging.info('%s Poll created')
         else:
             flash('Poll: Not Created', 'danger')
+            logging.info('%s Poll not created')
         #opDB = "INSERT INTO " + str(team2) + " "
 
         #strpoll = session['poll_id']
@@ -109,8 +111,10 @@ def countVote():
                 insert_comments = dbOp.insert_sql("INTERACTS", f"{strpoll}, {userID} , \'{rand_id}\', \'{comments}\'")
             if insert_comments == 0:
                 flash('Comment Not Made: ', 'danger')
+                logging.info('%s Comment not made')
             else:
                 flash('Comment Made: ', 'success')
+                logging.info('%s Comment made')
 
 
         display_comments = dbOp.read_sql_raw(f"select * from INTERACTS as I join POLLS as P on I.ip_id = P.poll_id where P.poll_id = {strpoll}")
