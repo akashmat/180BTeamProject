@@ -5,11 +5,20 @@ from admin import admin
 from polling import polling
 from forms import RegistrationForm, LoginForm
 
+import logging
+import logging.config
+
 #from flask_mysqldb 
 #from flask_sqlalchemy import SQLAlchemy
 #db = SQLAlchemy()
 
 import db_operations as dbOp
+
+logging.basicConfig(filename="output.log",
+                    filemode='a',
+                    # format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
+                    datefmt='%H:%M:%S',
+                    level=logging.DEBUG)
 
 
 app = Flask(__name__)
@@ -51,6 +60,7 @@ def register():
     form = RegistrationForm()
     if form.validate_on_submit():
         flash(f'Account created for {form.username.data}!', 'success')
+        logging.info('%s Account created successfully', form.username.data)
         return redirect(url_for('home'))
     return render_template('register.html', title='Register', form=form)
 
