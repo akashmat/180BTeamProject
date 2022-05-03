@@ -149,7 +149,7 @@ def index():
 
 if __name__ == '__main__':
     app.scheduler = scheduler
-    # app.scheduler.add_job(index, trigger='cron', year="*", month="*", day="*", hour="10", minute="0", second="0")
-    app.scheduler.add_job(index, trigger='cron', minute="*", second='10')
+    app.scheduler.add_job(index, trigger='cron', year="*", month="*", day="*", hour="10", minute="0", second="0")
+    # app.scheduler.add_job(index, trigger='cron', minute="*", second='10')
     app.scheduler.start()
     app.run(debug=True)

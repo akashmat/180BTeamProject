@@ -654,6 +654,12 @@ def add_match():
 
         if t1 and t2 and date and not identical_check:
             check_flag = dbOp.insert_sql("MATCH", f"{rand_id}, \'{t1}\', \'{t2}\', \'{date}\', null, null, null, null")
+            number_of_fans = dbOp.read_sql_raw("select profile_id from Fan")
+            if not number_of_fans.empty:
+                fan_array = number_of_fans['profile_id'].tolist()
+                for user_id in fan_array:
+                    check_insert = dbOp.insert_sql("NOTIFIES", f"{rand_id}, {user_id}")
+
         else:
             check_flag = 0
 
