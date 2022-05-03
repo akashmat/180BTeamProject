@@ -10,11 +10,11 @@ admin = Blueprint("admin", __name__, static_folder="static", template_folder="te
 
 # Database operations by Administer
 @admin.route("/homeAdmin")
-def homeAdmin():
-    if not ('user' in session and session['user'] == 'user1'):
-        return redirect(url_for('login'))
-    else:
-        return render_template('homeAdmin.html')
+def homeAdmin(USERID):
+    # if not ('user' in session and session['user'] == 'user1'):
+    #     return redirect(url_for('login'))
+    # else:
+    return render_template('homeAdmin.html', user = USERID)
 
 
 @admin.route("/readDB", methods=['POST', 'GET'])

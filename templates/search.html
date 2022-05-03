@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="div-profile">
+        <h1> Search Other Profiles </h1>
+        <form method="POST" action="/searchprofile">
+            <label for="search">Search Fans Profiles: </label>
+            <input type="text" id="search" name="search"> <br>
+            <input type="submit" value="Submit">
+            
+        </form>
+
+        <br>
+        <div style="overflow: auto">
+            {% if data %}
+                {% for d in data %}
+                    {{ d }}
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+{% endblock content %}
