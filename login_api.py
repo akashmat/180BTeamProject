@@ -10,7 +10,7 @@ def success(email, pwd, type):
         query = f"SELECT a.username as ID FROM [dbo].[Administrator] as a WHERE a.email = '{email}' AND a.hashed_password = '{pwd}';"
     
     data = dbOp.exec_sql(query, True)
-    print(data)
+    ##print(data)
 
     if len(data) > 0:
         return data[0]['ID']

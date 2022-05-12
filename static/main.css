@@ -79,7 +79,15 @@ body {
     font-size: 2.5rem;
   }
 
-  .div-admin .div-profile {
+  .div-profile {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+
+  .div-admin {
     background: #ffffff;
     padding: 10px 20px;
     border: 1px solid #dddddd;

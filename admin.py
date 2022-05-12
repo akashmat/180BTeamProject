@@ -20,11 +20,11 @@ logging.basicConfig(filename="output.log",
 
 # Database operations by Administer
 @admin.route("/homeAdmin")
-def homeAdmin(USERID):
+def homeAdmin():
     # if not ('user' in session and session['user'] == 'user1'):
     #     return redirect(url_for('login'))
     # else:
-    return render_template('homeAdmin.html', user = USERID)
+    return render_template('homeAdmin.html', logout = False, logoutA=True)
 
 
 @admin.route("/readDB", methods=['POST', 'GET'])
@@ -33,9 +33,9 @@ def readDB():
         name = request.form['read']
 
         df = dbOp.read_sql("*", str(name), "", "", "", "")
-        return render_template("homeAdmin.html", tables=[df.to_html(classes='data', header="true")])
+        return render_template("homeAdmin.html", tables=[df.to_html(classes='data', header="true")], logout = False, logoutA=True )
     else:
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
 
 
 @admin.route("/add_score", methods=['POST', 'GET'])
@@ -120,9 +120,9 @@ def add_score():
         elif not check_flag and two is not None:
             flash(f'Score for {name}, {year} not removed', 'danger')
             logging.info(f'%s, %s score for {name}, {year} not removed', name, year)
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
 
 @admin.route("/update_pscore", methods=['POST', 'GET'])
 def update_pscore():
@@ -189,9 +189,9 @@ def update_pscore():
         else:
             flash(f'Player Information for [{name}], [{year}]: {error_list} have not been updated!', 'danger')
             logging.info(f'%s, %s Player information: [{name}] or [{year}]: have not been updated!', name, year)
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
 
 @admin.route("/update_cscore", methods=['POST', 'GET'])
 def update_cscore():
@@ -264,9 +264,9 @@ def update_cscore():
         else:
             flash(f'Coach Information for [{name}], [{year}]: {error_list} have not been updated!', 'danger')
             logging.info(f'%s, %s Coach information [{name}], [{year}] not updated', name, year)
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
 
 @admin.route("/update_tscore", methods=['POST', 'GET'])
 def update_tscore():
@@ -329,9 +329,9 @@ def update_tscore():
         else:
             flash(f'Team Information for [{name}], [{year}]: {error_list} have not been updated!', 'danger')
             logging.info(f'%s, %s Team information [{name}], [{year}] not updated', name, year)
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
 
 @admin.route("/insert_player", methods=['POST', 'GET'])
 def insert_player():
@@ -418,9 +418,9 @@ def insert_player():
                 flash(f'Drafted Information for [{fname}], [{lname}]: Removed!', 'success')
                 logging.info(f'%s, %s Draft information [{fname}] or [{lname}] removed!', fname, lname)
 
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
 
 @admin.route("/add_player", methods=['POST', 'GET'])
 def add_player():
@@ -483,9 +483,9 @@ def add_player():
         else:
             flash(f'Player [{new_player}] cannot be added to team [{update_pteam}]!', 'danger')
             logging.info(f'%s, %s Player [{new_player}] cannot be added to team [{update_pteam}]', new_player, update_pteam)
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")    
+        return render_template("homeAdmin.html", logout = False, logoutA=True)    
 
 @admin.route("/remove_player", methods=['POST', 'GET'])
 def remove_player():
@@ -540,9 +540,9 @@ def remove_player():
         else:
             flash(f'Player [{new_player}]  was not removed from team [{update_pteam}]!', 'danger')
             logging.info(f'%s, %s Player [{new_player}] was not removed from team [{update_pteam}]', new_player, update_pteam)
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")   
+        return render_template("homeAdmin.html", logout = False, logoutA=True)   
 
 
 @admin.route("/add_coach", methods=['POST', 'GET'])
@@ -600,9 +600,9 @@ def add_coach():
         else:
             flash(f'Coach [{new_coach}] cannot be added to team [{update_cteam}]!', 'danger')
             logging.info(f'%s, %s Coach [{new_coach}] cannot be added to team [{update_cteam}]', new_coach, update_cteam)
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")    
+        return render_template("homeAdmin.html", logout = False, logoutA=True)    
 
 
 @admin.route("/remove_coach", methods=['POST', 'GET'])
@@ -657,9 +657,9 @@ def remove_coach():
         else:
             flash(f'Coach [{new_coach}]  was not removed from team [{update_cteam}]!', 'danger')
             logging.info(f'%s, %s Coach [{new_coach}] was not removed from team [{update_cteam}]', new_coach, update_cteam)
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")    
+        return render_template("homeAdmin.html", logout = False, logoutA=True)    
 
 ################################################ --- MATCH ---- ############################################################################
 @admin.route("/add_match", methods=['POST', 'GET'])
@@ -713,9 +713,9 @@ def add_match():
             flash(f'Match between [{t1}] and [{t2}] not added for [{date}]!', 'danger')
             logging.info(f'%s, %s match between [{t1}] and [{t2}] was not added', t1, t2)
 
-        return render_template("homeAdmin.html") 
+        return render_template("homeAdmin.html", logout = False, logoutA=True) 
     else:    
-        return render_template("homeAdmin.html") 
+        return render_template("homeAdmin.html", logout = False, logoutA=True) 
 
 #Match
 @admin.route("/update_match", methods=['POST', 'GET'])
@@ -773,9 +773,9 @@ def update_match():
         else:
             flash(f'Match Information between [{update_name1}] and [{update_name2}] on [{update_date}]: {update_list} have been updated!', 'success')
             logging.info(f'%s, %s match information between [{update_name1}] and [{update_name2}] updated', update_name1,update_name2)
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
 
 def is_integer(n):
     try:
@@ -817,9 +817,9 @@ def delete_match():
         else:
             flash(f'Match information between [{delete_name1}] and [{delete_name2}]on [{delete_date}]: Deleted!', 'success')
             logging.info(f'%s, %s match information between [{delete_name1}] and [{delete_name2}] deleted', delete_name1, delete_name2)
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
 
 def is_integer(n):
     try:
@@ -863,9 +863,9 @@ def add_verification():
             flash(f'Verification: User [{add_username}] could not be verified!', 'danger')
             logging.info(f'%s User [{add_username}] cannot be verified', add_username)
                 
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
 
 
 @admin.route("/remove_verification", methods=['POST', 'GET'])
@@ -899,6 +899,6 @@ def remove_verification():
             flash(f'Verification: User [{remove_username}] could not be un-verified!', 'danger')
             logging.info(f'%s User [{remove_username}] cannot be unverified', remove_username)
 
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)
     else:
-        return render_template("homeAdmin.html")
+        return render_template("homeAdmin.html", logout = False, logoutA=True)

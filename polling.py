@@ -55,7 +55,7 @@ def createPoll():
         #strpoll = session['poll_id']
         #print(strpoll[0])
 
-    return render_template("homeAdmin.html")
+    return render_template("homeAdmin.html", logout=False, logutA=True)
 
 poll_data = {
    'question' : 'Which team do you think will win?',
@@ -70,8 +70,6 @@ def countVote():
         strpoll = session['poll_id']
         strpoll2 = session['user']
         # print(strpoll[0])
-
-
 
         vote = request.form.get('field')
         
@@ -98,7 +96,7 @@ def countVote():
             percentage1 = int((count1 / total) * 100)
             percentage2 = int((count2 / total) * 100)
 
-        q3 = dbOp.read_sql_raw(f"select * from fan where username = \'{strpoll2}\'")
+        q3 = dbOp.read_sql_raw(f"select * from fan where profile_id	 = \'{strpoll2}\'")
         print(q3['profile_id'])
         userID = q3['profile_id'].iloc[0]
 
@@ -129,6 +127,6 @@ def countVote():
 
         display_comments = dbOp.read_sql_raw(f"select * from INTERACTS as I join POLLS as P on I.ip_id = P.poll_id where P.poll_id = {strpoll}")
 
-        return render_template('results.html', dis_comments=dis_comments, display_comments=display_comments['comments'], total=total, percentage1=percentage1, percentage2=percentage2, data=poll_data)
+        return render_template('results.html', dis_comments=dis_comments, display_comments=display_comments['comments'], total=total, percentage1=percentage1, percentage2=percentage2, data=poll_data, logout=True, logoutA=False)
     else:
-        return render_template('results.html')
+        return render_template('results.html', logout=True, logoutA=False)

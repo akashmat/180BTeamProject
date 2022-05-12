@@ -9,6 +9,10 @@ class RegistrationForm(FlaskForm):
                            validators=[DataRequired(), Length(min=2, max=20)])
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
+    firstname = StringField('First Name',
+                           validators=[DataRequired(), Length(min=2, max=20)])
+    lastname = StringField('Last Name',
+                           validators=[DataRequired(), Length(min=2, max=20)])                                           
     password = PasswordField('Password', validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password',
                                      validators=[DataRequired(), EqualTo('password')])
@@ -41,11 +45,11 @@ class SearchOption(FlaskForm):
 
 class ProfileForm(FlaskForm):
     data = profile_api.getteams()
-    print(data)
+    ##print(data)
     li = []
     for d in data:
         li.append(d[0])
-    print(li)
+    ##print(li)
     favteam = SelectField('FavTeam', choices=li,)
     followteam = SelectField('FollowTeam', choices=li,)
     firstname = StringField('First Name', validators=[DataRequired()])

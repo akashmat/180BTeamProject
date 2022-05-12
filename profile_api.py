@@ -12,13 +12,13 @@ def update_success(username, followteam, favteam, firstname, lastname, id):
 
 def getdata(id):
     data = dbOp.read_sql("*", "[dbo].[Fan]", "", "", "", "")
-    print(data)
+    ##print(data)
     return data
 
 def getteams():
     query = f"SELECT [team_name] FROM [dbo].[TEAM]"
     data = dbOp.exec_sql(query)
-    print(data)
+    ##print(data)
     return data
 
 # def search(playername):

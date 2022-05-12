@@ -21,7 +21,7 @@ import json
 from tabnanny import check
 from sqlalchemy import true
 from os import abort
-from flask_session import Session
+#from flask_session import Session
 import signup_api, login_api, profile_api
 
 
@@ -40,9 +40,9 @@ app.config['MAIL_USE_SSL'] = False
 mail = Mail(app)
 
 USER_ID = -1
-app.config["SESSION_PERMANENT"] = False
-app.config["SESSION_TYPE"] = "filesystem"
-session = Session(app)
+#app.config["SESSION_PERMANENT"] = False
+#app.config["SESSION_TYPE"] = "filesystem"
+#session = Session(app)
 
 Server = "DESKTOP-TIANPEN\SQLEXPRESS"
 Database = "nfl"
@@ -64,16 +64,10 @@ logging.basicConfig(filename="output.log",
 #Testing: Remove posts.
 posts = [
     {
-        'author': 'AM 1',
-        'title': 'Post 1',
-        'content': 'Post 1 content',
+        'author': 'Judge',
+        'title': 'WELCOME!',
+        'content': 'Make sure to follow all online rules.',
         'date_posted': 'April 14, 2022'
-    },
-    {
-        'author': 'PM 2',
-        'title': 'Post 2',
-        'content': 'Post 2 content',
-        'date_posted': 'April 15, 2022'
     }
 ]
 
@@ -96,7 +90,7 @@ def register():
         request_data = json.loads(json.dumps(request.form))
         if signup_api.success(request_data):
             flash(f'Account created for {form.username.data}!', 'success')
-            #logging.info('%s Account created successfully', form.username.data)
+            logging.info('%s Account created successfully', form.username.data)
             return render_template('login.html', title='Login', form = LoginForm())
         else:
             flash('Registration unsuccessful. Please try again later!', 'danger')
@@ -115,10 +109,16 @@ def login():
         if data:
             flash('You have been logged in!', 'success')
             if form.usertype.data == 'fan':
-                return render_template('home.html', logout=True)
+                session['user'] = USER_ID
+                session['admin'] = None
+                return render_template('home.html', logout=True, logoutA=False)
             else:
-                return render_template('homeAdmin.html', logout=True)
+                session['user'] = None
+                session['admin'] = USER_ID
+                return render_template('homeAdmin.html', logout=False, logoutA=True)
         else:
+            session['user'] = None
+            session['admin'] = None
             flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('login.html', title='Login', form=form)
 
@@ -131,7 +131,7 @@ def profile():
             flash('Profile updated successfully!', 'success')
         else:
             flash('Could not update profile. Please try again later!', 'danger')
-    return render_template('profile.html', title='Edit Profile', form = form, logout = True)
+    return render_template('profile.html', title='Edit Profile', form = form, logout = True, logoutA=False)
 
 @app.route("/viewprofile", methods=['GET', 'POST'])
 def viewprofile():
@@ -140,17 +140,7 @@ def viewprofile():
     if data:
         return render_template('view_profile.html', title='View Profile', data = data)
     else:
-        flash('Could not retrieve profile information. Please try again later!', 'danger')
-'''
-@app.route("/fansearch", method=['GET', 'POST'])
-def fansearch():
-    form = SearchForm()
-    if request.method=="POST":
-        data = profile_api.search(form.playername.data)
-        return render_template("search.html", data=data)
-    else:
-        return render_template("search.html", title = "Search Profile", form=form)
-'''        
+        flash('Could not retrieve profile information. Please try again later!', 'danger')    
 
 @app.route('/logout', methods=['GET'])
 def logout():
@@ -158,19 +148,9 @@ def logout():
     USER_ID = -1
     return redirect("/")
 
-
-
-'''
-@app.route("/login", methods=['GET', 'POST'])
-def login():
-    session['user'] = 'Tenson89'
-    session['admin'] = 'Manny'
-    return render_template("homeAdmin.html")
-'''
-
 @app.route("/homeAdmin")
 def homeAdmin():
-    return render_template('homeAdmin.html', posts=posts, logout=True)
+    return render_template('homeAdmin.html', logout = False, logoutA=True)
     
 
 poll_data = {
@@ -195,17 +175,10 @@ def poll():
     poll_data['team1'] = query1['team_name1'].iloc[0]
     poll_data['team2'] = query1['team_name2'].iloc[0]
 
-    return render_template('poll.html', data=poll_data)
-
-''''
-# Database operations by Administer
-@app.route("/homeAdmin")
-def homeAdmin():
-    if not ('user' in session and session['user'] == 'user1'):
+    if session.get("user") is None or session.get("admin") is not None:
         return redirect(url_for('login'))
     else:
-        return render_template('homeAdmin.html')
-'''        
+        return render_template('poll.html', data=poll_data, logout=True, logutA=False)
 
 ################################################ --- Ankur ---- ############################################################################
 
@@ -243,13 +216,19 @@ def personal_records():
                       ORDER BY member_id ASC".format(player_id)
         cursor.execute(query_name)
         stats = cursor.fetchall()
-    
-        return render_template('stats.html', stats=stats)
+
+        if session.get('user') is None:
+            return render_template('stats.html', stats=stats, logout = False, logoutA=False)
+        else:
+            return render_template('stats.html', stats=stats, logout = True, logoutA=False)
 
     players_names = select_players() 
     form.member.choices = players_names
     view = 'personal_records'
-    return render_template('search.html', title='Player', form=form, view=view)
+    if session.get('user') is None:
+        return render_template('search.html', title='Player', form=form, view=view, logout = False, logoutA=False)
+    else:    
+        return render_template('search.html', title='Player', form=form, view=view, logout = True, logoutA=False)
 
 def select_players():
     cursor = connection.cursor()
@@ -284,13 +263,19 @@ def coach_records():
                       ORDER BY member_id ASC".format(coach_id)
         cursor.execute(query_name)
         stats = cursor.fetchall()
-    
-        return render_template('statscoach.html', stats=stats, view=view)
+
+        if session.get('user') is None:
+            return render_template('statscoach.html', stats=stats, view=view, logout = False, logoutA=False)
+        else:    
+            return render_template('statscoach.html', stats=stats, view=view, logout = True, logoutA=False)
         
     players_names = select_coaches() 
     form.member.choices = players_names
     
-    return render_template('search.html', title='Coach', form=form, view=view)
+    if session.get('user') is None:
+        return render_template('search.html', title='Coach', form=form, view=view, logout = False, logoutA=False)
+    else:
+        return render_template('search.html', title='Coach', form=form, view=view, logout = True, logoutA=False)
 
 def select_coaches():
     cursor = connection.cursor()
@@ -322,12 +307,18 @@ def team_records():
         cursor.execute(query_name)
         stats = cursor.fetchall()
     
-        return render_template('statsteam.html', stats=stats, view=view)
+        if session.get('user') is None:
+            return render_template('statsteam.html', stats=stats, view=view, logout = False, logoutA=False)
+        else:
+            return render_template('statsteam.html', stats=stats, view=view, logout = True, logoutA=False)
         
     teams_names = select_teams() 
     form.member.choices = teams_names
     
-    return render_template('search.html', title='Team', form=form, view=view)
+    if session.get('user') is None:
+        return render_template('search.html', title='Team', form=form, view=view, logout = False, logoutA=False)
+    else:
+        return render_template('search.html', title='Team', form=form, view=view, logout = True, logoutA=False)
 
 def select_teams():
     cursor = connection.cursor()
@@ -358,12 +349,15 @@ def search():
         elif option == '/team_records':
             return redirect(url_for('team_records'))
     
-    return render_template('search.html', title='Search', form=form, view=view)
+    if session.get('user') is None:
+        return render_template('search.html', title='Search', form=form, view=view, logout = False, logoutA=False)
+    else:
+        return render_template('search.html', title='Search', form=form, view=view, logout = True, logoutA=False)
     
 
 if __name__ == '__main__':
     app.scheduler = scheduler
-    app.scheduler.add_job(index, trigger='cron', year="*", month="*", day="*", hour="10", minute="0", second="0")
-    # app.scheduler.add_job(index, trigger='cron', minute="*", second='10')
+    #app.scheduler.add_job(index, trigger='cron', year="*", month="*", day="*", hour="10", minute="0", second="0")
+    app.scheduler.add_job(index, trigger='cron', minute="*", second='10')
     app.scheduler.start()
     app.run(debug=True)

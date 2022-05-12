@@ -35,12 +35,14 @@
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               {% if logout %}
-                <a class="nav-item nav-link" href="{{ url_for('profile') }}">Profile</a>                
-                <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>      
+                <a class="nav-item nav-link" href="{{ url_for('profile') }}">Profile</a>           
+                <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+              {% elif logoutA %}   
+                <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>    
               {% else %}
                 <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
                 <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
-              {% endif %}              
+              {% endif %}
             </div>
           </div>
         </div>
